@@ -60,12 +60,20 @@ public class Main {
                 return;
             }
 
-            // 7. On génère l'image différentielle SEULEMENT si des pixels diffèrent
+            // 7. Afficher le résultat final (OK/KO et comptage) -- C'EST LE NOUVEL ORDRE
+            if (differentPixels < 1000) { 
+                System.out.println("OK");
+            } else {
+                System.out.println("KO");
+            }
+            System.out.println("Les deux images diffèrent de " + differentPixels + " pixels.");
+
+            // 8. On génère l'image différentielle SEULEMENT si des pixels diffèrent
             if (differentPixels > 0) {
                 System.out.println("Génération de l'image différentielle...");
                 BufferedImage diffImage = comparator.generateDiffImage(image1, image2);
                 
-                // 8. Enregistrer la nouvelle image
+                // 9. Enregistrer la nouvelle image
                 try {
                     File outputDiffFile = new File("diff.png");
                     ImageIO.write(diffImage, "png", outputDiffFile);
@@ -74,14 +82,6 @@ public class Main {
                     System.err.println("Erreur lors de l'écriture de l'image diff : " + e.getMessage());
                 }
             }
-
-            // 9. Afficher le résultat final
-            if (differentPixels < 1000) { 
-                System.out.println("OK");
-            } else {
-                System.out.println("KO");
-            }
-            System.out.println("Les deux images diffèrent de " + differentPixels + " pixels.");
 
         } catch (IOException e) {
             // 10. Gérer les erreurs de lecture de fichier (ex: fichier non trouvé)
