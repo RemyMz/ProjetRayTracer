@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "fr.imt.raytracer.imgcompare.Main",
+            "projectName": "imgcompare",
+            // C'est ici qu'on ajoute les arguments
+            "args": [
+                "images_test/test_compare_image1.png",
+                "images_test/test_compare_image2.png"
+            ]
+        }
+    ]
+}
