@@ -21,7 +21,6 @@
             "mainClass": "fr.imt.raytracer.Main",
             "projectName": "raytracer",
             "args": [
-                // Dites-lui quel fichier scène utiliser !
                 "scenes/test3.scene"
             ]
         }
