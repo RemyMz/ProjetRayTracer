@@ -12,11 +12,11 @@ Ce dépôt contient deux projets Maven :
 
 État d'avancement
 
-✅ Jalon 0 - Comparateur d'images : Terminé. L'outil imgcompare fonctionne.
+Jalon 0 - Comparateur d'images : Terminé. L'outil imgcompare fonctionne.
 
-✅ Jalon 1 - Calcul vectoriel : Terminé. Les classes de base (Point, Vector, Color) sont en place et validées par des tests JUnit 5.
+Jalon 1 - Calcul vectoriel : Terminé. Les classes de base (Point, Vector, Color) sont en place et validées par des tests JUnit 5.
 
-⏳ Jalon 2 - Lecture du fichier de scène : Next Step
+Jalon 2 - Lecture du fichier de scène : Next Step
 
 Comment utiliser ?
 
@@ -32,11 +32,11 @@ L'outil imgcompare compare deux images depuis la ligne de commande. Il donne un 
 
 1. Compiler le projet (la première fois) :
 
-# Aller dans le dossier du comparateur
-cd imgcompare
+Aller dans le dossier du comparateur
+-> cd imgcompare
 
-# Compiler et créer le .jar
-mvn clean package
+Compiler et créer le .jar
+-> mvn clean package
 
 
 2. Exécuter le comparateur :
@@ -70,6 +70,3 @@ cd raytracer
 2. Lancer les tests :
 
 mvn test
-
-
-Si Maven dit [INFO] BUILD SUCCESS et que tous les tests pour Vector, Point et Color passent (tout est vert), c'est que le cœur du moteur fonctionne !
