@@ -32,11 +32,11 @@ L'outil imgcompare compare deux images depuis la ligne de commande. Il donne un 
 
 1. Compiler le projet (la première fois) :
 
-# Aller dans le dossier du comparateur
-cd imgcompare
+Aller dans le dossier du comparateur
+-> cd imgcompare
 
-# Compiler et créer le .jar
-mvn clean package
+Compiler et créer le .jar
+-> mvn clean package
 
 
 2. Exécuter le comparateur :
@@ -70,6 +70,3 @@ cd raytracer
 2. Lancer les tests :
 
 mvn test
-
-
-Si Maven dit [INFO] BUILD SUCCESS et que tous les tests pour Vector, Point et Color passent (tout est vert), c'est que le cœur du moteur fonctionne !
