@@ -2,15 +2,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            // Configuration pour imgcompare (Jalon 0)
             "type": "java",
-            "name": "Launch Main",
+            "name": "Launch imgcompare Main",
             "request": "launch",
             "mainClass": "fr.imt.raytracer.imgcompare.Main",
             "projectName": "imgcompare",
-            // C'est ici qu'on ajoute les arguments
             "args": [
                 "images_test/test_compare_image1.png",
                 "images_test/test_compare_image2.png"
+            ]
+        },
+        {
+            // NOUVELLE configuration pour raytracer (Jalon 2)
+            "type": "java",
+            "name": "Launch raytracer Main (test3.scene)",
+            "request": "launch",
+            "mainClass": "fr.imt.raytracer.Main",
+            "projectName": "raytracer",
+            "args": [
+                // Dites-lui quel fichier scène utiliser !
+                "scenes/test3.scene"
             ]
         }
     ]

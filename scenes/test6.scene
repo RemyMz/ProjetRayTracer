@@ -1,0 +1,59 @@
+# Les lignes qui commencent par # sont des commentaires
+
+# La taille de l'image qui doit être générée, largeur puis hauteur
+
+size 1024 768 
+
+# Le nom du fichier dans lequel l'image est générée
+# Si cette information n'est pas donnée, ce sera output.png
+
+output mascene.png
+
+# La position de la caméra.
+# camera x y z u v w m n o f
+# Les trois premières valeurs correspondent à la position de l'oeil (x,y,z)
+# Les trois suivantes correspondent au point visé par l'oeil -- look at -- (u,v,w)
+# Les trois suivantes correspondent à la direction vers le haut de la caméra (m,n,o)
+# La dernière correspond à l'angle de vue (field of view, fov) f
+#
+# La caméra est positionnée en (0,0,4), regarde le centre de la scène (0,0,0),
+# la position haute suivant l'axe des y (0,1,0), avec un angle de vue de 30°
+camera 2 5 5 0 0 0 0 1 0 45
+
+
+# lighting/material definitions
+# for initial testing, you should get the geometry right
+# you may want to use dummy (constant) shading, ignoring these lines
+
+ambient .1 .1 .1
+directional 0 0 1 .5 .5 .5 
+point 5 0 5 .5 .5 .5
+diffuse .8 0 0 
+# specular .1 .1 .1
+
+
+# Now specify the geometry 
+# Again, for initial testing, maybe you want to implement a dummy 
+# ray-plane intersection routine, instead of reading this fully.
+# Though it's probably simpler you just implement this, for later 
+# parts of the assignment.
+
+# Définition de points dans la scène à l'aide de leurs coordonnées.
+# Il faut définir en avance le nombre de points déclarés pour faciliter leur lecture.
+
+# Définition de formes géométriques à partir des points.
+# Les points sont référencés par leur indice de déclaration, à partir de 0.
+
+# On déclare trois spheres
+diffuse .7 .0 .0
+specular .2 .2 .2
+sphere 1 0 0 1
+diffuse .0 .7 .0
+specular .0 .0 .0
+sphere -1 0 0 0.75
+diffuse .0 .0 .8 
+sphere 0 0 1 0.5
+diffuse .2 .2 .2
+specular .7 .7 .7
+shininess 50
+sphere -0.2 0.1 -1 0.5
