@@ -12,11 +12,11 @@ Ce dépôt contient deux projets Maven :
 
 État d'avancement
 
-✅ Jalon 0 - Comparateur d'images : Terminé. L'outil imgcompare fonctionne.
+Jalon 0 - Comparateur d'images : Terminé. L'outil imgcompare fonctionne.
 
-✅ Jalon 1 - Calcul vectoriel : Terminé. Les classes de base (Point, Vector, Color) sont en place et validées par des tests JUnit 5.
+Jalon 1 - Calcul vectoriel : Terminé. Les classes de base (Point, Vector, Color) sont en place et validées par des tests JUnit 5.
 
-⏳ Jalon 2 - Lecture du fichier de scène : Next Step
+Jalon 2 - Lecture du fichier de scène : Next Step
 
 Comment utiliser ?
 
