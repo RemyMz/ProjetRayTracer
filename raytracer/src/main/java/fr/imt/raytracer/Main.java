@@ -4,8 +4,16 @@ import fr.imt.raytracer.parsing.SceneFileParser;
 import fr.imt.raytracer.scene.Scene;
 import java.io.IOException;
 
+// --- IMPORTS AJOUTÉS (Jalon 3) ---
+import fr.imt.raytracer.renderer.RayTracer;
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.File;
+// ---
+
 /**
  * Point d'entrée principal pour le projet Raytracer.
+ * (Mis à jour Jalon 3)
  */
 public class Main {
 
@@ -21,7 +29,7 @@ public class Main {
         System.out.println("Chargement de la scène : " + sceneFilePath);
 
         try {
-            // 2. Créer le parser et lire le fichier
+            // 2. Créer le parser et lire le fichier (Jalon 2)
             SceneFileParser parser = new SceneFileParser();
             Scene scene = parser.parse(sceneFilePath);
 
@@ -37,10 +45,43 @@ public class Main {
             System.out.println("  Nombre de vertices : " + scene.getVertices().size());
             System.out.println("-------------------------------------");
 
-            // TODO: (Pour le Jalon 3) Appeler le RayTracer pour générer l'image
+            // --- DÉBUT JALON 3 : Rendu de l'image ---
+            
+            System.out.println("\nLancement du rendu (Jalon 3)...");
+
+            // 4. Créer le moteur de rendu
+            RayTracer rayTracer = new RayTracer(scene);
+
+            // 5. Lancer le rendu (cela peut prendre quelques secondes)
+            BufferedImage image = rayTracer.render();
+
+            System.out.println("Rendu terminé.");
+
+            // 6. Sauvegarder l'image
+            String filename = scene.getOutputFilename();
+            
+            // Créer le dossier "output" à la racine s'il n'existe pas
+            File outputDir = new File("output");
+            if (!outputDir.exists()) {
+                outputDir.mkdir();
+            }
+            
+            // Le chemin de sauvegarde sera "output/mascene.png"
+            File outputFile = new File(outputDir, filename);
+            
+            // Écrire l'image au format PNG
+            ImageIO.write(image, "png", outputFile);
+
+            System.out.println("Image sauvegardée dans : " + outputFile.getPath());
+            
+            // --- FIN JALON 3 ---
 
         } catch (IOException e) {
             System.err.println("Erreur lors de la lecture du fichier scène : " + e.getMessage());
+        } catch (Exception e) {
+            // Attraper d'autres erreurs potentielles (ex: rendu)
+            System.err.println("Une erreur est survenue lors du rendu : " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

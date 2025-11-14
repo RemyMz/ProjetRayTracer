@@ -1,25 +1,25 @@
-/**
- * Classe abstraite parente pour toutes les formes géométriques.
- * Stocke les propriétés de matériaux (couleurs) qui sont définies
- * avant la forme dans le fichier de scène.
- * (Basé sur Jalon 2 - Aide 4 et Jalon 5)
- */
 package fr.imt.raytracer.geometry;
 
 import fr.imt.raytracer.imaging.Color;
+// Importer les nouvelles classes
+import java.util.Optional;
 
+/**
+ * Classe parente abstraite pour tous les objets 3D de la scène.
+ * (Mise à jour Jalon 3)
+ */
 public abstract class Shape {
 
-    // Propriétés de matériau (Jalon 2 & Jalon 5)
-    protected Color diffuse;
-    protected Color specular;
-    protected double shininess; // Défini dans le Jalon 5, mais utilisé par le parser
+    // Les matériaux (Jalon 2)
+    protected final Color diffuse;
+    protected final Color specular;
+    protected final double shininess; // (Pour Jalon 5)
 
     /**
      * Constructeur pour une forme.
-     * @param diffuse Couleur diffuse actuelle
-     * @param specular Couleur spéculaire actuelle
-     * @param shininess Brillance actuelle (de Jalon 5)
+     * @param diffuse Couleur de la réflexion diffuse
+     * @param specular Couleur de la réflexion spéculaire
+     * @param shininess Exposant de brillance (pour Phong)
      */
     public Shape(Color diffuse, Color specular, double shininess) {
         this.diffuse = diffuse;
@@ -28,7 +28,7 @@ public abstract class Shape {
     }
 
     // --- Getters pour les matériaux ---
-    // (Ces getters seront utiles plus tard, notamment au Jalon 4)
+    // (Le Jalon 4 en aura besoin)
     
     public Color getDiffuse() {
         return diffuse;
@@ -37,8 +37,29 @@ public abstract class Shape {
     public Color getSpecular() {
         return specular;
     }
-    
+
     public double getShininess() {
         return shininess;
     }
+    
+    // --- NOUVELLES MÉTHODES ABSTRAITES (Jalon 3 & 4) ---
+
+    /**
+     * Calcule si un rayon donné intersecte cette forme.
+     * (Jalon 3)
+     *
+     * @param ray Le rayon à tester.
+     * @return Un Optional contenant l'Intersection si elle existe,
+     * sinon Optional.empty().
+     */
+    public abstract Optional<Intersection> findIntersection(Ray ray);
+
+    /**
+     * Calcule le vecteur normal à la surface de la forme au point donné.
+     * (Jalon 4)
+     *
+     * @param point Le point sur la surface de la forme.
+     * @return Le vecteur normal (normalisé) à ce point.
+     */
+    public abstract Vector getNormalAt(Point point);
 }
