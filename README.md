@@ -14,7 +14,7 @@ Ce dépôt contient deux projets Maven distincts :
 * **Jalon 0 - Comparateur d'images : Terminé.** L'outil `imgcompare` est fonctionnel et peut être exécuté.
 * **Jalon 1 - Calcul vectoriel : Terminé.** Les classes de base (`Point`, `Vector`, `Color`) sont en place et entièrement validées par 19 tests unitaires JUnit 5.
 * **Jalon 2 - Lecture du fichier de scène : Terminé.** Le `SceneFileParser` est capable de lire et de comprendre les fichiers `.scene`, transformant le texte en une structure d'objets Java.
-* **Jalon 3 - Premières images : Terminé.** Le moteur est capable de générer une première image (sphères avec couleur ambiante) à partir d'un fichier `.scene`.
+* **Jalon 3 - Premières images : Terminé.** Le moteur génère les 5 images de test (`tp31` à `tp35`) et elles sont validées à 100% (`OK`) par le comparateur.
 * **Jalon 4 - Calcul de la couleur d'un point. Prochaine étape.**
 
 ## Comment utiliser ?
