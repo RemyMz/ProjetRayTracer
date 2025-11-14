@@ -14,7 +14,8 @@ Ce dépôt contient deux projets Maven distincts :
 * **Jalon 0 - Comparateur d'images : Terminé.** L'outil `imgcompare` est fonctionnel et peut être exécuté.
 * **Jalon 1 - Calcul vectoriel : Terminé.** Les classes de base (`Point`, `Vector`, `Color`) sont en place et entièrement validées par 19 tests unitaires JUnit 5.
 * **Jalon 2 - Lecture du fichier de scène : Terminé.** Le `SceneFileParser` est capable de lire et de comprendre les fichiers `.scene`, transformant le texte en une structure d'objets Java.
-* **Jalon 3 - Premières images : Prochaine étape.**
+* **Jalon 3 - Premières images : Terminé.** Le moteur est capable de générer une première image (sphères avec couleur ambiante) à partir d'un fichier `.scene`.
+* **Jalon 4 - Calcul de la couleur d'un point. Prochaine étape.**
 
 ## Comment utiliser ?
 
@@ -73,7 +74,7 @@ Vous devriez voir un `BUILD SUCCESS` avec 19 tests passés.
 
 #### 2. Lancer le Parser (Validation Jalon 2)
 
-On peut exécuter le `Main` du raytracer pour lui faire lire un fichier `.scene` et afficher ce qu'il a compris.
+On peut exécuter le `Main` du raytracer pour lui faire lire un fichier `.scene`, afficher ce qu'il a compris (validation Jalon 2), puis générer l'image correspondante (validation Jalon 3).
 
 #### Depuis VSCode :
 
@@ -87,6 +88,8 @@ On peut exécuter le `Main` du raytracer pour lui faire lire un fichier `.scene`
 
 #### Ce que vous verrez dans le terminal :
 
+D'abord, le résumé de la validation du Jalon 2 s'affichera :
+
 ```bash
 --- Validation Jalon 2 (Parsing) ---
 Scène chargée avec succès !
@@ -97,3 +100,13 @@ Scène chargée avec succès !
   Nombre de formes : 1
 -------------------------------------
 ```
+
+Puis, la validation du Jalon 3 :
+
+```bash
+Lancement du rendu (Jalon 3)...
+Rendu terminé.
+Image sauvegardée dans : output/mascene.png
+```
+
+Vous trouverez votre image (`mascene.png` ou autre) dans un nouveau dossier `output/` à la racine du projet.
