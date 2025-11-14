@@ -110,3 +110,21 @@ Image sauvegardée dans : output/mascene.png
 ```
 
 Vous trouverez votre image (`mascene.png` ou autre) dans un nouveau dossier `output/` à la racine du projet.
+
+#### 3. Lancer le Rendu (Validation Jalon 3)
+
+C'est la méthode principale pour valider le Jalon 3. Le fichier `launch.json` est configuré pour tester tous les fichiers de scène (`.test`) fournis.
+
+#### Depuis VSCode :
+
+1. Assurez-vous d'avoir un dossier `scenes/` à la racine du projet contenant tous les fichiers `.test` et `.png`.
+
+2. Ouvrez l'onglet "Exécuter et déboguer".
+
+3. Dans le menu déroulant, sélectionnez `Étape 1: RENDER tp31` et appuyez sur F5 (ou le bouton Play).
+
+4. Quand le rendu est terminé, sélectionnez `Étape 2: COMPARE tp31` et appuyez sur F5.
+
+5. La console de débogage doit afficher `OK`.
+
+6. Répétez ce processus pour tous les tests (`tp32`, `tp33`, `tp34`, `tp35`). Si tous affichent `OK`, le Jalon 3 est validé.
