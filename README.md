@@ -83,7 +83,7 @@ On peut exécuter le `Main` du raytracer pour lui faire lire un fichier `.scene`
 
 3. Dans le menu déroulant, sélectionnez `Launch raytracer Main (test3.scene)`.
 
-4. Appuyez sur F5.
+4. Appuyez sur F5 ou sur le bouton Play.
 
 #### Ce que vous verrez dans le terminal :
 
