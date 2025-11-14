@@ -1,4 +1,13 @@
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/Main.java
 /Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/geometry/AbstractVec3.java
 /Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/geometry/Point.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/geometry/Shape.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/geometry/Sphere.java
 /Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/geometry/Vector.java
 /Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/imaging/Color.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/parsing/SceneFileParser.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/scene/Camera.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/scene/DirectionalLight.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/scene/Light.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/scene/PointLight.java
+/Users/remymazingue/Documents/IMT/Cours/Conception et Programmation Orientée Objet/Projet/ProjetRayTracer/raytracer/src/main/java/fr/imt/raytracer/scene/Scene.java
