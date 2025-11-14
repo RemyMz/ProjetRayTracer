@@ -108,7 +108,7 @@ public class RayTracer {
                 // Si l'image est à l'envers, on changera :
                 // image.setRGB(i, j, pixelColor.toRGB());
                 // en:
-                image.setRGB(i, height - 1 - j, pixelColor.toRGB());
+                image.setRGB(i, j, pixelColor.toRGB());
             }
         }
         return image;
