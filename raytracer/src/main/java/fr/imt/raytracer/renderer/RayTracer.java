@@ -7,6 +7,7 @@ import fr.imt.raytracer.geometry.Shape;
 import fr.imt.raytracer.geometry.Vector;
 import fr.imt.raytracer.imaging.Color;
 import fr.imt.raytracer.scene.Camera;
+import fr.imt.raytracer.scene.Light;
 import fr.imt.raytracer.scene.Scene;
 
 import java.awt.image.BufferedImage;
@@ -15,7 +16,7 @@ import java.util.Optional;
 
 /**
  * Le moteur principal du Ray Tracer.
- * (Jalon 3)
+ * (Jalon 3 & 4)
  */
 public class RayTracer {
 
@@ -85,33 +86,68 @@ public class RayTracer {
                 // 2. Trouver l'intersection la plus proche
                 Optional<Intersection> closestIntersection = findClosestIntersection(ray);
 
-                // 3. Calculer la couleur (Jalon 3, page 1 & 5)
+                // 3. Calculer la couleur (Jalon 4 - Mise à jour)
                 Color pixelColor;
                 if (closestIntersection.isPresent()) {
-                    // "si p existe alors calculer sa couleur"
-                    // "On utilisera tout simplement la lumière ambiante de la scène" (Jalon 3, page 5)
-                    pixelColor = scene.getAmbientLight();
+                    // Si on touche un objet, on calcule sa vraie couleur (Lambert)
+                    pixelColor = computeColor(closestIntersection.get());
                 } else {
                     // "sinon utiliser du noir"
                     pixelColor = new Color(0, 0, 0); // Noir
                 }
 
-                // 4. Peindre le pixel
-                // ATTENTION: Coordonnées Java (Jalon 3, page 3)
-                // (i, j) dans le raytracer correspond à (i, height - 1 - j) dans l'image
-                // ou (i, j) si on inverse le vecteur 'v' ?
-                // Le PDF dit "inverser les pixels des colonnes (haut/bas)"
-                // Non, "inverser les pixels des colonnes" (j) est ambigu.
-                // Le plus simple est de ne PAS inverser 'b' dans le calcul du rayon.
-                // (Voir generateRayForPixel, j'ai mis un 'moins' sur 'b')
-                //
-                // Si l'image est à l'envers, on changera :
-                // image.setRGB(i, j, pixelColor.toRGB());
-                // en:
+                // 4. Peindre le pixel (Jalon 3 - Correction bug inversion Y)
                 image.setRGB(i, j, pixelColor.toRGB());
             }
         }
         return image;
+    }
+
+    /**
+     * Calcule la couleur d'un point d'intersection en utilisant le modèle de Lambert.
+     * (Jalon 4)
+     *
+     * @param intersection L'objet intersection contenant le point, la forme, etc.
+     * @return La couleur calculée.
+     */
+    private Color computeColor(Intersection intersection) {
+        Shape shape = intersection.getShape();
+        Point p = intersection.getPoint();
+        
+        // 1. Normale à la surface au point p
+        Vector n = shape.getNormalAt(p);
+
+        // 2. Couleur diffuse de l'objet
+        Color objectDiffuse = shape.getDiffuse();
+
+        // 3. Couleur finale initialisée avec la lumière ambiante
+        // Couleur = Ambiante + Somme(Lumières)
+        Color finalColor = scene.getAmbientLight();
+
+        // 4. Ajouter la contribution de chaque lumière (Jalon 4)
+        for (Light light : scene.getLights()) {
+            
+            // Vecteur direction vers la lumière (L)
+            Vector l = light.getDirectionFrom(p);
+            
+            // Calcul du coefficient de Lambert : max(n . l, 0)
+            // (Produit scalaire entre la normale et la direction de la lumière)
+            double dotNL = n.dot(l);
+            double lambert = Math.max(dotNL, 0.0);
+
+            if (lambert > 0) {
+                // Contribution = lambert * lightColor * objectDiffuse
+                // (On utilise le produit de Schur pour multiplier les couleurs composante par composante)
+                Color lightContribution = light.getColor()
+                                          .multiply(lambert)
+                                          .schur(objectDiffuse);
+                
+                // Ajouter à la couleur finale
+                finalColor = finalColor.add(lightContribution);
+            }
+        }
+
+        return finalColor;
     }
 
     /**
@@ -134,9 +170,7 @@ public class RayTracer {
         // b = pixelHeight * ( (2j - height + 1) / height )
         double b = pixelHeight * ( (2.0 * j - height + 1.0) / height );
 
-        // Le PDF (Jalon 3, page 3) dit que le (0,0) Java est en haut à gauche,
-        // ce qui inverse l'axe Y (j). On doit donc inverser 'b'.
-        // Si l'image est à l'envers, on enlèvera ce "moins".
+        // Inversion de l'axe Y (Jalon 3)
         b = -b;
 
         // Calcul de la direction 'd' (Jalon 3, page 4)

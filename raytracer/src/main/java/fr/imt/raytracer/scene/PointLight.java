@@ -1,35 +1,42 @@
-/**
- * Représente une source de lumière ponctuelle (type "point").
- * Elle implémente l'interface Light.
- * (Jalon 2)
- */
 package fr.imt.raytracer.scene;
 
 import fr.imt.raytracer.geometry.Point;
+import fr.imt.raytracer.geometry.Vector;
 import fr.imt.raytracer.imaging.Color;
 
+/**
+ * Une source de lumière ponctuelle.
+ * (Mise à jour Jalon 4)
+ */
 public class PointLight implements Light {
 
     private final Point position;
-    private final Color color; // Dans les fichiers, c'est la couleur/intensité
+    private final Color color;
 
-    /**
-     * Constructeur pour une lumière ponctuelle.
-     * @param position Le point d'origine (x, y, z)
-     * @param color La couleur/intensité (r, g, b)
-     */
     public PointLight(Point position, Color color) {
         this.position = position;
         this.color = color;
     }
 
-    // --- Getters ---
+    /**
+     * Retourne la couleur de la lumière.
+     */
+    @Override
+    public Color getColor() {
+        return this.color;
+    }
+
+    /**
+     * Pour une lumière ponctuelle, la direction est le vecteur
+     * allant du point d'intersection vers la position de la lumière.
+     * Formule: (position_lumière - point_intersection).normalize()
+     */
+    @Override
+    public Vector getDirectionFrom(Point p) {
+        return this.position.subtract(p).normalize();
+    }
     
     public Point getPosition() {
         return position;
-    }
-
-    public Color getColor() {
-        return color;
     }
 }
