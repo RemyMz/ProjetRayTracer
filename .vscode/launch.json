@@ -28,6 +28,14 @@
         // --- VALIDATION JALON 3 (TP31 - TP35) ---
         { "type": "java", "name": "J3: RENDER tp31", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp31.test" ] },
         { "type": "java", "name": "J3: COMPARE tp31", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp31.png", "scenes/tp31.png" ] },
+        { "type": "java", "name": "J3: RENDER tp32", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp32.test" ] },
+        { "type": "java", "name": "J3: COMPARE tp32", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp32.png", "scenes/tp32.png" ] },
+        { "type": "java", "name": "J3: RENDER tp33", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp33.test" ] },
+        { "type": "java", "name": "J3: COMPARE tp33", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp33.png", "scenes/tp33.png" ] },
+        { "type": "java", "name": "J3: RENDER tp34", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp34.test" ] },
+        { "type": "java", "name": "J3: COMPARE tp34", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp34.png", "scenes/tp34.png" ] },
+        { "type": "java", "name": "J3: RENDER tp35", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp35.test" ] },
+        { "type": "java", "name": "J3: COMPARE tp35", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp35.png", "scenes/tp35.png" ] },
         
         // --- VALIDATION JALON 4 (TP41 - TP45) ---
 
