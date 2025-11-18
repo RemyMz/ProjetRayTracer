@@ -25,94 +25,38 @@
             "args": [ "scenes/test3.scene" ]
         },
 
-        // --- VALIDATION JALON 3 : TEST TP31 ---
-        {
-            "type": "java",
-            "name": "Étape 1: RENDER tp31",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.Main",
-            "projectName": "raytracer",
-            "args": [ "scenes/tp31.test" ]
-        },
-        {
-            "type": "java",
-            "name": "Étape 2: COMPARE tp31",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.imgcompare.Main",
-            "projectName": "imgcompare",
-            "args": [ "output/tp31.png", "scenes/tp31.png" ]
-        },
+        // --- VALIDATION JALON 3 (TP31 - TP35) ---
+        { "type": "java", "name": "J3: RENDER tp31", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp31.test" ] },
+        { "type": "java", "name": "J3: COMPARE tp31", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp31.png", "scenes/tp31.png" ] },
+        
+        // --- VALIDATION JALON 4 (TP41 - TP45) ---
 
-        // --- VALIDATION JALON 3 : TEST TP32 ---
-        {
-            "type": "java",
-            "name": "Étape 1: RENDER tp32",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.Main",
-            "projectName": "raytracer",
-            "args": [ "scenes/tp32.test" ]
-        },
-        {
-            "type": "java",
-            "name": "Étape 2: COMPARE tp32",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.imgcompare.Main",
-            "projectName": "imgcompare",
-            "args": [ "output/tp32.png", "scenes/tp32.png" ]
-        },
+        // TP41-DIR
+        { "type": "java", "name": "J4: RENDER tp41-dir", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp41-dir.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp41-dir", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp41-dir.png", "scenes/tp41-dir.png" ] },
 
-        // --- VALIDATION JALON 3 : TEST TP33 ---
-        {
-            "type": "java",
-            "name": "Étape 1: RENDER tp33",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.Main",
-            "projectName": "raytracer",
-            "args": [ "scenes/tp33.test" ]
-        },
-        {
-            "type": "java",
-            "name": "Étape 2: COMPARE tp33",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.imgcompare.Main",
-            "projectName": "imgcompare",
-            "args": [ "output/tp33.png", "scenes/tp33.png" ]
-        },
+        // TP41-POINT
+        { "type": "java", "name": "J4: RENDER tp41-point", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp41-point.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp41-point", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp41-point.png", "scenes/tp41-point.png" ] },
 
-        // --- VALIDATION JALON 3 : TEST TP34 ---
-        {
-            "type": "java",
-            "name": "Étape 1: RENDER tp34",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.Main",
-            "projectName": "raytracer",
-            "args": [ "scenes/tp34.test" ]
-        },
-        {
-            "type": "java",
-            "name": "Étape 2: COMPARE tp34",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.imgcompare.Main",
-            "projectName": "imgcompare",
-            "args": [ "output/tp34.png", "scenes/tp34.png" ]
-        },
+        // TP42-DIR
+        { "type": "java", "name": "J4: RENDER tp42-dir", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp42-dir.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp42-dir", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp42-dir.png", "scenes/tp42-dir.png" ] },
 
-        // --- VALIDATION JALON 3 : TEST TP35 ---
-        {
-            "type": "java",
-            "name": "Étape 1: RENDER tp35",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.Main",
-            "projectName": "raytracer",
-            "args": [ "scenes/tp35.test" ]
-        },
-        {
-            "type": "java",
-            "name": "Étape 2: COMPARE tp35",
-            "request": "launch",
-            "mainClass": "fr.imt.raytracer.imgcompare.Main",
-            "projectName": "imgcompare",
-            "args": [ "output/tp35.png", "scenes/tp35.png" ]
-        }
+        // TP42-POINT
+        { "type": "java", "name": "J4: RENDER tp42-point", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp42-point.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp42-point", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp42-point.png", "scenes/tp42-point.png" ] },
+
+        // TP43
+        { "type": "java", "name": "J4: RENDER tp43", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp43.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp43", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp43.png", "scenes/tp43.png" ] },
+
+        // TP44
+        { "type": "java", "name": "J4: RENDER tp44", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp44.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp44", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp44.png", "scenes/tp44.png" ] },
+
+        // TP45
+        { "type": "java", "name": "J4: RENDER tp45", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp45.test" ] },
+        { "type": "java", "name": "J4: COMPARE tp45", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp45.png", "scenes/tp45.png" ] }
     ]
 }
