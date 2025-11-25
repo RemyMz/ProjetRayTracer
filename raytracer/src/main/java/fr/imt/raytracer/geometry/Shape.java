@@ -14,6 +14,7 @@ public abstract class Shape {
     protected final Color diffuse;
     protected final Color specular;
     protected final double shininess; // (Pour Jalon 5)
+    public static final double EPSILON = 1e-9;
 
     /**
      * Constructeur pour une forme.

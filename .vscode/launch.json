@@ -66,5 +66,28 @@
         // TP45
         { "type": "java", "name": "J4: RENDER tp45", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp45.test" ] },
         { "type": "java", "name": "J4: COMPARE tp45", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp45.png", "scenes/tp45.png" ] }
+
+    // --- VALIDATION JALON 5 (TP51 - TP55) ---
+
+        // TP51-DIFFUSE (Test de la lumière diffuse sans specularité)
+        { "type": "java", "name": "J5: RENDER tp51-diffuse", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp51-diffuse.test" ] },
+        { "type": "java", "name": "J5: COMPARE tp51-diffuse", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp51-diffuse.png", "scenes/tp51-diffuse.png" ] },
+
+        // TP51-SPECULAR (Test de la lumière spéculaire - Phong)
+        { "type": "java", "name": "J5: RENDER tp51-specular", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp51-specular.test" ] },
+        { "type": "java", "name": "J5: COMPARE tp51-specular", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp51-specular.png", "scenes/tp51-specular.png" ] },
+
+        // TP54 (Test des ombres portées - Sphère au-dessus du plan)
+        { "type": "java", "name": "J5: RENDER tp54", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp54.test" ] },
+        { "type": "java", "name": "J5: COMPARE tp54", "request": "launch", "mainClass": "fr.imt.raytracer.imgcompare.Main", "projectName": "imgcompare", "args": [ "output/tp54.png", "scenes/tp54.png" ] },
+
+        // TP52, TP53, TP55 (Tests non-sphériques qui vont échouer mais sont prêts)
+        { "type": "java", "name": "J5: RENDER tp52 (Triangles)", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp52.test" ] },
+        { "type": "java", "name": "J5: RENDER tp53 (Triangles)", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp53.test" ] },
+        { "type": "java", "name": "J5: RENDER tp55 (Triangles/Plan/Ombre)", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp55.test" ] },
+        
+        // --- JALON 4 & 3 configs laissées pour référence ---
+        { "type": "java", "name": "Launch raytracer Main (test3.scene)", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/test3.scene" ] },
+        { "type": "java", "name": "J3: RENDER tp31", "request": "launch", "mainClass": "fr.imt.raytracer.Main", "projectName": "raytracer", "args": [ "scenes/tp31.test" ] }
     ]
 }
