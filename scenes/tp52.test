@@ -1,0 +1,17 @@
+size 640 480
+
+output tp52.png
+
+camera .5 .5 2 .5 .5 .5 0 1 0 45
+
+maxverts 4
+
+ambient 1 0 0
+
+vertex 0 0 0
+vertex 1 0 0
+vertex 0 1 0
+vertex 1 1 0
+
+tri 0 1 3
+tri 0 3 2

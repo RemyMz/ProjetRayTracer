@@ -1,0 +1,23 @@
+size 640 480
+
+output tp55.png
+
+camera 0 4 8 0 0 0 0 1 0 45
+
+point 0 4 0 1 1 1
+
+maxverts 3
+
+vertex 1 1 -1
+vertex 2 1 -1
+vertex 1.5 0.5 1 
+
+diffuse .8 .2 .2
+sphere 0 0 0 1
+
+diffuse .2 .8 .2
+tri 0 2 1
+
+diffuse .8 .8 .8
+plane 0 -2 0 0 1 0
+
