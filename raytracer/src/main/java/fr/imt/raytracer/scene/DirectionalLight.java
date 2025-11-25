@@ -40,7 +40,7 @@ public class DirectionalLight implements Light {
     public Vector getDirectionFrom(Point p) {
         // On ignore 'p' car la lumière est directionnelle (infinie)
         // On retourne l'inverse de la direction (vecteur * -1)
-        return this.direction.multiply(-1.0);
+        return this.direction;
     }
 
     // Getter spécifique à la lumière directionnelle (optionnel pour l'interface Light mais utile)

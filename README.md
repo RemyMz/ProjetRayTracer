@@ -15,7 +15,8 @@ Ce dépôt contient deux projets Maven distincts :
 * **Jalon 1 - Calcul vectoriel : Terminé.** Les classes de base (`Point`, `Vector`, `Color`) sont en place et entièrement validées par 19 tests unitaires JUnit 5.
 * **Jalon 2 - Lecture du fichier de scène : Terminé.** Le `SceneFileParser` est capable de lire et de comprendre les fichiers `.scene`, transformant le texte en une structure d'objets Java.
 * **Jalon 3 - Premières images : Terminé.** Le moteur génère les 5 images de test (`tp31` à `tp35`) et elles sont validées à 100% (`OK`) par le comparateur.
-* **Jalon 4 - Calcul de la couleur d'un point. Prochaine étape.**
+* **Jalon 4 - Calcul de la couleur d'un point. Terminé.** L'éclairage diffus (Lambert) est implémenté et validé par les tests `tp4X`.
+* **Jalon 5 - Ombres et Phong : Prochaine étape.**
 
 ## Comment utiliser ?
 
@@ -123,8 +124,8 @@ C'est la méthode principale pour valider le Jalon 3. Le fichier `launch.json` e
 
 3. Dans le menu déroulant, sélectionnez `Étape 1: RENDER tp31` et appuyez sur F5 (ou le bouton Play).
 
-4. Quand le rendu est terminé, sélectionnez `Étape 2: COMPARE tp31` et appuyez sur F5.
+4. Quand le rendu est terminé, sélectionnez `Étape 2: RENDER tp41-dir` et appuyez sur F5.
 
-5. La console de débogage doit afficher `OK`.
+5. La console de débogage doit afficher `OK` pour tous les tests.
 
-6. Répétez ce processus pour tous les tests (`tp32`, `tp33`, `tp34`, `tp35`). Si tous affichent `OK`, le Jalon 3 est validé.
+6. Répétez ce processus pour tous les tests (`tp41-point`, `tp42-dir`, etc). Si tous affichent `OK`, les jalons 3 et 4 sont validés.
