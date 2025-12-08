@@ -1,0 +1,22 @@
+size 1024 768
+
+output tp51-diffuse.png
+
+camera 0 4 8 0 0 0 0 1 0 45
+
+point 0 4 1 .4 .4 .4
+point 4 4 4 .3 .3 .3
+point -4 4 4 .3 .3 .3
+
+diffuse .8 0 0
+sphere 0 0 2 1
+diffuse 0 .8 0
+sphere -1 0 1 1
+diffuse 0 0 .8
+sphere 1 0 1 1
+diffuse .8 .8 0
+sphere -2 0 0 1
+diffuse .8 0 .8
+sphere 0 0 0 1
+diffuse 0 .8 .8
+sphere 2 0 0 1

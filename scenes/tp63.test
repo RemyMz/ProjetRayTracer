@@ -1,0 +1,29 @@
+size 640 480
+
+output tp63.png
+
+camera 5 2 5 0 0 0 0 1 0 45
+
+directional 1 1 1 1 1 1
+
+specular .4 .4 .4
+shininess 10
+maxdepth 10
+
+maxverts 4
+
+vertex -1 -1 -1 
+vertex 1 -1 -1 
+vertex 1 1 -1 
+vertex -1 1 -1 
+
+diffuse .6 0 .6
+tri 0 1 2
+tri 0 2 3
+
+diffuse 0 .6 .6
+sphere 0 0 1 1
+
+diffuse .6 .6 0
+shininess 1
+plane 0 -1.5 0 0 1 0

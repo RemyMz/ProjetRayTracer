@@ -1,0 +1,1338 @@
+size 1920 1080
+
+camera 0.0 0.0 150.0 0.0 0.0 5.0 0.0 1.0 0.0 45
+output final.png
+
+
+point 0 0 40 .9 .9 .9
+
+diffuse 0.7 0.3 0.4
+shininess -1
+specular 0.4 0.4 0.4
+sphere 0 0 -10000 10000
+
+
+diffuse 0.175 0.21 0.131
+shininess 100
+specular 0.46 0.46 0.46
+sphere -150 -153 7 7
+
+diffuse 0.94 0.785 0.899
+shininess 72
+specular 0.17 0.17 0.17
+sphere -152 -135 4 4
+
+diffuse 0.191 0.545 0.015
+shininess 69
+specular 0.4 0.4 0.4
+sphere -152 -107 3 3
+
+diffuse 0.302 0.406 0.574
+shininess 67
+specular 0.04 0.04 0.04
+sphere -151 -87 4 4
+
+diffuse 0.992 0.481 0.612
+shininess 134
+specular 0.67 0.67 0.67
+sphere -148 -73 7 7
+
+diffuse 1 0.357 0.973
+shininess 5
+specular 0.57 0.57 0.57
+sphere -147 -54 5 5
+
+diffuse 0.327 0.251 0.372
+shininess 136
+specular 0.48 0.48 0.48
+sphere -145 -24 7 7
+
+diffuse 0.975 0.132 0.151
+shininess 89
+specular 0.01 0.01 0.01
+sphere -154 -12 6 6
+
+diffuse 0.082 0.914 0.974
+shininess 11
+specular 0.65 0.65 0.65
+sphere -148 6 6 6
+
+diffuse 0.629 0.067 0.796
+shininess 3
+specular 0.68 0.68 0.68
+sphere -148 25 5 5
+
+diffuse 0.767 0.602 0.708
+shininess 138
+specular 0.13 0.13 0.13
+sphere -154 42 5 5
+
+diffuse 0.254 0.467 0.847
+shininess 36
+specular 0.37 0.37 0.37
+sphere -148 60 7 7
+
+diffuse 0.663 0.067 0.814
+shininess 70
+specular 0.04 0.04 0.04
+sphere -154 76 6 6
+
+diffuse 0.079 0.647 0.167
+shininess 119
+specular 0.4 0.4 0.4
+sphere -150 97 5 5
+
+diffuse 0.517 0.248 0.369
+shininess 56
+specular 0.33 0.33 0.33
+sphere -149 121 7 7
+
+diffuse 0.227 0.672 0.648
+shininess 9
+specular 0.09 0.09 0.09
+sphere -150 134 5 5
+
+diffuse 0.297 0.35 0.8
+shininess 15
+specular 0.64 0.64 0.64
+sphere -136 -148 6 6
+
+diffuse 0.016 0.397 0.872
+shininess 59
+specular 0.62 0.62 0.62
+sphere -133 -146 5 5
+
+diffuse 0.583 0.444 0.748
+shininess 95
+specular 0.4 0.4 0.4
+sphere -135 -116 3 3
+
+diffuse 0.275 0.979 0.501
+shininess 14
+specular 0.04 0.04 0.04
+sphere -131 -99 3 3
+
+diffuse 0.166 0.932 0.778
+shininess 8
+specular 0.22 0.22 0.22
+sphere -131 -80 4 4
+
+diffuse 0.933 0.588 0.015
+shininess 103
+specular 0.15 0.15 0.15
+sphere -129 -74 5 5
+
+diffuse 0.811 0.507 0.803
+shininess 49
+specular 0.41 0.41 0.41
+sphere -131 -48 7 7
+
+diffuse 0.192 0.696 0.575
+shininess 146
+specular 0.52 0.52 0.52
+sphere -130 -27 6 6
+
+diffuse 0.105 0.651 0.214
+shininess 20
+specular 0.23 0.23 0.23
+sphere -133 1 6 6
+
+diffuse 0.298 0.898 0.447
+shininess 17
+specular 0.14 0.14 0.14
+sphere -133 14 7 7
+
+diffuse 0.583 0.033 0.192
+shininess 26
+specular 0 0 0
+sphere -128 39 5 5
+
+diffuse 0.249 0.564 0.413
+shininess 71
+specular 0.48 0.48 0.48
+sphere -132 65 6 6
+
+diffuse 0.335 0.517 0.876
+shininess 118
+specular 0.43 0.43 0.43
+sphere -134 77 7 7
+
+diffuse 0.08 0.607 0.687
+shininess 43
+specular 0.54 0.54 0.54
+sphere -132 94 6 6
+
+diffuse 0.571 0.563 0.222
+shininess 148
+specular 0.01 0.01 0.01
+sphere -130 122 6 6
+
+diffuse 0.896 0.637 0.463
+shininess 117
+specular 0.29 0.29 0.29
+sphere -128 141 7 7
+
+diffuse 0.746 0.489 0.572
+shininess 5
+specular 0.18 0.18 0.18
+sphere -105 -146 7 7
+
+diffuse 0.633 0.139 0.096
+shininess 94
+specular 0.11 0.11 0.11
+sphere -112 -136 7 7
+
+diffuse 0.982 0.941 0.756
+shininess 114
+specular 0.25 0.25 0.25
+sphere -112 -130 4 4
+
+diffuse 0.476 0.247 0.981
+shininess 10
+specular 0.18 0.18 0.18
+sphere -106 -107 5 5
+
+diffuse 0.356 0.931 0.024
+shininess 69
+specular 0.38 0.38 0.38
+sphere -107 -93 7 7
+
+diffuse 0.187 0.257 0.7
+shininess 142
+specular 0 0 0
+sphere -103 -80 6 6
+
+diffuse 0.112 0.126 0.529
+shininess 16
+specular 0.12 0.12 0.12
+sphere -106 -64 4 4
+
+diffuse 0.369 0.633 0.556
+shininess 61
+specular 0.06 0.06 0.06
+sphere -107 -42 6 6
+
+diffuse 0.299 0.185 0.119
+shininess 150
+specular 0.09 0.09 0.09
+sphere -107 -23 7 7
+
+diffuse 0.189 0.862 0.837
+shininess 109
+specular 0.67 0.67 0.67
+sphere -103 -10 6 6
+
+diffuse 0.908 0.865 0.422
+shininess 71
+specular 0.18 0.18 0.18
+sphere -109 -6 6 6
+
+diffuse 0.705 0.347 0.752
+shininess 124
+specular 0.24 0.24 0.24
+sphere -103 8 5 5
+
+diffuse 0.116 0.978 0.565
+shininess 144
+specular 0.49 0.49 0.49
+sphere -108 40 6 6
+
+diffuse 1 0.709 0.325
+shininess 65
+specular 0.12 0.12 0.12
+sphere -110 65 5 5
+
+diffuse 0.306 0.132 0.323
+shininess 11
+specular 0.67 0.67 0.67
+sphere -104 87 7 7
+
+diffuse 0.614 0.192 0.702
+shininess 29
+specular 0.1 0.1 0.1
+sphere -102 110 6 6
+
+diffuse 0.57 0.607 0.206
+shininess 135
+specular 0.02 0.02 0.02
+sphere -111 139 5 5
+
+diffuse 0.425 0.037 0.258
+shininess 74
+specular 0.7 0.7 0.7
+sphere -90 -146 7 7
+
+diffuse 0.518 0.195 0.845
+shininess 105
+specular 0.24 0.24 0.24
+sphere -82 -125 3 3
+
+diffuse 0.019 0.456 0.097
+shininess 138
+specular 0.34 0.34 0.34
+sphere -87 -102 7 7
+
+diffuse 0.378 0.019 0.334
+shininess 97
+specular 0.35 0.35 0.35
+sphere -87 -88 4 4
+
+diffuse 0.064 0.751 0.763
+shininess 137
+specular 0.31 0.31 0.31
+sphere -81 -77 5 5
+
+diffuse 0.73 0.573 0.457
+shininess 125
+specular 0.34 0.34 0.34
+sphere -82 -58 3 3
+
+diffuse 0.176 0.765 0.918
+shininess 78
+specular 0.28 0.28 0.28
+sphere -82 -41 7 7
+
+diffuse 0.533 0.404 0.823
+shininess 46
+specular 0.22 0.22 0.22
+sphere -81 -27 3 3
+
+diffuse 0.466 0.839 0.525
+shininess 139
+specular 0.47 0.47 0.47
+sphere -86 -9 7 7
+
+diffuse 0.867 0.067 0.015
+shininess 119
+specular 0.41 0.41 0.41
+sphere -81 11 4 4
+
+diffuse 0.489 0.915 0.949
+shininess 49
+specular 0.14 0.14 0.14
+sphere -87 29 5 5
+
+diffuse 0.56 0.192 0.53
+shininess 15
+specular 0.08 0.08 0.08
+sphere -85 44 6 6
+
+diffuse 0.232 0.032 0.056
+shininess 39
+specular 0.57 0.57 0.57
+sphere -81 54 7 7
+
+diffuse 0.565 0.541 0.961
+shininess 79
+specular 0.6 0.6 0.6
+sphere -91 68 3 3
+
+diffuse 0.124 0.339 0.697
+shininess 99
+specular 0.3 0.3 0.3
+sphere -87 93 5 5
+
+diffuse 0.51 0.024 0.047
+shininess 86
+specular 0.19 0.19 0.19
+sphere -86 119 3 3
+
+diffuse 0.984 0.45 0.793
+shininess 142
+specular 0.68 0.68 0.68
+sphere -81 148 4 4
+
+diffuse 0.203 0.233 0.941
+shininess 129
+specular 0.46 0.46 0.46
+sphere -81 -146 4 4
+
+diffuse 0.688 0.569 0.77
+shininess 40
+specular 0.59 0.59 0.59
+sphere -80 -125 6 6
+
+diffuse 0.762 0.969 0.497
+shininess 107
+specular 0.66 0.66 0.66
+sphere -73 -102 6 6
+
+diffuse 0.917 0.425 0.947
+shininess 129
+specular 0.2 0.2 0.2
+sphere -74 -92 6 6
+
+diffuse 0.714 0.47 0.722
+shininess 74
+specular 0.51 0.51 0.51
+sphere -71 -62 3 3
+
+diffuse 0.882 0.103 0.605
+shininess 59
+specular 0.57 0.57 0.57
+sphere -80 -47 6 6
+
+diffuse 0.343 0.126 0.167
+shininess 45
+specular 0.69 0.69 0.69
+sphere -75 -34 6 6
+
+diffuse 0.745 0.154 0.146
+shininess 72
+specular 0.45 0.45 0.45
+sphere -75 -14 6 6
+
+diffuse 0.392 0.93 0.476
+shininess 150
+specular 0.21 0.21 0.21
+sphere -73 10 4 4
+
+diffuse 0.572 0.257 0.872
+shininess 112
+specular 0.38 0.38 0.38
+sphere -72 30 6 6
+
+diffuse 0.118 0.191 0.784
+shininess 42
+specular 0.46 0.46 0.46
+sphere -77 47 6 6
+
+diffuse 0.061 0.569 0.112
+shininess 82
+specular 0.4 0.4 0.4
+sphere -74 58 3 3
+
+diffuse 0.846 0.824 0.995
+shininess 109
+specular 0.39 0.39 0.39
+sphere -80 72 6 6
+
+diffuse 0.382 0.102 0.21
+shininess 27
+specular 0.26 0.26 0.26
+sphere -73 103 3 3
+
+diffuse 0.687 0.619 0.332
+shininess 121
+specular 0.11 0.11 0.11
+sphere -76 123 6 6
+
+diffuse 0.716 0.844 0.295
+shininess 107
+specular 0.39 0.39 0.39
+sphere -71 151 5 5
+
+diffuse 0.993 0.337 0.362
+shininess 26
+specular 0.5 0.5 0.5
+sphere -63 -153 3 3
+
+diffuse 0.895 0.407 0.842
+shininess 105
+specular 0.4 0.4 0.4
+sphere -67 -137 5 5
+
+diffuse 0.257 0.581 0.682
+shininess 146
+specular 0.1 0.1 0.1
+sphere -64 -113 4 4
+
+diffuse 0.427 0.142 0.79
+shininess 119
+specular 0.21 0.21 0.21
+sphere -66 -96 5 5
+
+diffuse 0.556 0.598 0.215
+shininess 61
+specular 0.2 0.2 0.2
+sphere -69 -76 7 7
+
+diffuse 0.594 0.579 0.455
+shininess 43
+specular 0.38 0.38 0.38
+sphere -67 -64 7 7
+
+diffuse 0.217 0.298 0.106
+shininess 4
+specular 0.06 0.06 0.06
+sphere -61 -43 7 7
+
+diffuse 0.916 0.011 0.803
+shininess 22
+specular 0.29 0.29 0.29
+sphere -68 -26 4 4
+
+diffuse 0.42 0.896 0.812
+shininess 132
+specular 0.12 0.12 0.12
+sphere -63 -14 4 4
+
+diffuse 0.949 0.341 0.64
+shininess 11
+specular 0.24 0.24 0.24
+sphere -59 6 4 4
+
+diffuse 0.054 0.75 0.931
+shininess 129
+specular 0.62 0.62 0.62
+sphere -60 35 7 7
+
+diffuse 0.024 0.305 0.149
+shininess 126
+specular 0.12 0.12 0.12
+sphere -61 52 4 4
+
+diffuse 0.992 0.252 0.658
+shininess 96
+specular 0.21 0.21 0.21
+sphere -62 68 4 4
+
+diffuse 0.69 0.911 0.941
+shininess 94
+specular 0.54 0.54 0.54
+sphere -61 83 3 3
+
+diffuse 0.974 0.637 0.149
+shininess 21
+specular 0.33 0.33 0.33
+sphere -62 100 7 7
+
+diffuse 0.986 0.97 0.997
+shininess 98
+specular 0.42 0.42 0.42
+sphere -62 126 6 6
+
+diffuse 0.148 0.765 0.416
+shininess 16
+specular 0.27 0.27 0.27
+sphere -59 131 5 5
+
+diffuse 0.878 0.159 0.338
+shininess 150
+specular 0.44 0.44 0.44
+sphere -35 -150 3 3
+
+diffuse 0.286 0.614 0.182
+shininess 140
+specular 0.15 0.15 0.15
+sphere -41 -130 3 3
+
+diffuse 0.319 0.327 0.501
+shininess 63
+specular 0.5 0.5 0.5
+sphere -43 -114 3 3
+
+diffuse 0.245 0.467 0.999
+shininess 89
+specular 0.33 0.33 0.33
+sphere -44 -92 7 7
+
+diffuse 0.093 0.217 0.508
+shininess 43
+specular 0.1 0.1 0.1
+sphere -35 -70 7 7
+
+diffuse 0.81 0.212 0.652
+shininess 49
+specular 0.44 0.44 0.44
+sphere -37 -53 4 4
+
+diffuse 0.775 0.666 0.052
+shininess 117
+specular 0.17 0.17 0.17
+sphere -34 -38 5 5
+
+diffuse 0.392 0.52 0.554
+shininess 136
+specular 0.56 0.56 0.56
+sphere -39 -13 4 4
+
+diffuse 0.885 0.235 0.729
+shininess 82
+specular 0.38 0.38 0.38
+sphere -38 7 5 5
+
+diffuse 0.128 0.06 0.988
+shininess 29
+specular 0.59 0.59 0.59
+sphere -39 25 4 4
+
+diffuse 0.575 0.126 0.647
+shininess 21
+specular 0.01 0.01 0.01
+sphere -42 50 3 3
+
+diffuse 0.166 0.887 0.49
+shininess 135
+specular 0.3 0.3 0.3
+sphere -37 63 4 4
+
+diffuse 0.646 0.708 0.591
+shininess 96
+specular 0.63 0.63 0.63
+sphere -41 86 5 5
+
+diffuse 0.717 0.237 0.73
+shininess 56
+specular 0.25 0.25 0.25
+sphere -38 102 6 6
+
+diffuse 0.449 0.572 0.696
+shininess 141
+specular 0.33 0.33 0.33
+sphere -42 126 7 7
+
+diffuse 0.242 0.088 0.262
+shininess 126
+specular 0.51 0.51 0.51
+sphere -37 144 5 5
+
+diffuse 0.457 0.157 0.923
+shininess 124
+specular 0.37 0.37 0.37
+sphere -14 -145 3 3
+
+diffuse 0.167 0.658 0.131
+shininess 18
+specular 0.08 0.08 0.08
+sphere -15 -133 5 5
+
+diffuse 0.078 0.781 0.899
+shininess 137
+specular 0.35 0.35 0.35
+sphere -13 -108 6 6
+
+diffuse 0.284 0.249 0.246
+shininess 33
+specular 0.04 0.04 0.04
+sphere -21 -99 3 3
+
+diffuse 0.133 0.655 0.63
+shininess 42
+specular 0.54 0.54 0.54
+sphere -15 -84 7 7
+
+diffuse 0.479 0.67 0.989
+shininess 58
+specular 0.41 0.41 0.41
+sphere -13 -56 4 4
+
+diffuse 0.837 0.866 0.469
+shininess 15
+specular 0.05 0.05 0.05
+sphere -14 -38 4 4
+
+diffuse 0.933 0.37 0.996
+shininess 86
+specular 0.45 0.45 0.45
+sphere -12 -24 4 4
+
+diffuse 0.358 0.076 0.578
+shininess 54
+specular 0.32 0.32 0.32
+sphere -21 7 7 7
+
+diffuse 0.102 0.745 0.281
+shininess 87
+specular 0.58 0.58 0.58
+sphere -13 22 5 5
+
+diffuse 0.019 0.246 0.717
+shininess 5
+specular 0.57 0.57 0.57
+sphere -15 37 4 4
+
+diffuse 0.033 0.862 0.446
+shininess 93
+specular 0.14 0.14 0.14
+sphere -21 51 4 4
+
+diffuse 0.46 0.886 0.422
+shininess 112
+specular 0.32 0.32 0.32
+sphere -22 81 6 6
+
+diffuse 0.915 0.949 0.657
+shininess 96
+specular 0.68 0.68 0.68
+sphere -16 102 5 5
+
+diffuse 0.103 0.624 0.348
+shininess 84
+specular 0.16 0.16 0.16
+sphere -14 111 5 5
+
+diffuse 0.684 0.059 0.118
+shininess 18
+specular 0.56 0.56 0.56
+sphere -22 136 4 4
+
+diffuse 0.057 0.233 0.965
+shininess 105
+specular 0.14 0.14 0.14
+sphere -5 -152 4 4
+
+diffuse 0.036 0.645 0.508
+shininess 89
+specular 0.62 0.62 0.62
+sphere 4 -132 3 3
+
+diffuse 0.57 0.723 0.386
+shininess 102
+specular 0.37 0.37 0.37
+sphere 3 -110 4 4
+
+diffuse 0.729 0.163 0.548
+shininess 105
+specular 0.6 0.6 0.6
+sphere -2 -98 4 4
+
+diffuse 0.686 0.714 0.789
+shininess 31
+specular 0.21 0.21 0.21
+sphere -1 -77 3 3
+
+diffuse 0.603 0.125 0.643
+shininess 149
+specular 0.56 0.56 0.56
+sphere -3 -62 7 7
+
+diffuse 0.146 0.316 0.219
+shininess 105
+specular 0 0 0
+sphere 3 -51 3 3
+
+diffuse 0.278 0.283 0.832
+shininess 12
+specular 0.33 0.33 0.33
+sphere -5 -32 3 3
+
+diffuse 0.655 0.069 0.417
+shininess 47
+specular 0.04 0.04 0.04
+sphere 2 -20 4 4
+
+diffuse 0.067 0.196 0.369
+shininess 45
+specular 0.63 0.63 0.63
+sphere -6 -7 3 3
+
+diffuse 0.449 0.791 0.24
+shininess 44
+specular 0.6 0.6 0.6
+sphere -3 15 7 7
+
+diffuse 0.888 0.106 0.95
+shininess 48
+specular 0.28 0.28 0.28
+sphere 0 33 7 7
+
+diffuse 0.922 0.087 0.768
+shininess 45
+specular 0.26 0.26 0.26
+sphere 3 41 5 5
+
+diffuse 0.69 0.438 0.973
+shininess 140
+specular 0.51 0.51 0.51
+sphere 2 71 3 3
+
+diffuse 0.011 0.313 0.206
+shininess 145
+specular 0.43 0.43 0.43
+sphere -5 89 3 3
+
+diffuse 0.713 0.401 0.075
+shininess 74
+specular 0.49 0.49 0.49
+sphere -5 112 7 7
+
+diffuse 0.542 0.873 0.567
+shininess 79
+specular 0.56 0.56 0.56
+sphere -3 133 3 3
+
+diffuse 0.55 0.43 0.085
+shininess 114
+specular 0.27 0.27 0.27
+sphere -2 146 6 6
+
+diffuse 0.557 0.247 0.424
+shininess 8
+specular 0.66 0.66 0.66
+sphere 18 -146 4 4
+
+diffuse 0.841 0.93 0.872
+shininess 55
+specular 0.51 0.51 0.51
+sphere 12 -134 4 4
+
+diffuse 0.732 0.006 0.559
+shininess 75
+specular 0.28 0.28 0.28
+sphere 11 -118 5 5
+
+diffuse 0.105 0.663 0.949
+shininess 81
+specular 0.49 0.49 0.49
+sphere 17 -104 6 6
+
+diffuse 0.181 0.027 0.391
+shininess 10
+specular 0.27 0.27 0.27
+sphere 18 -75 5 5
+
+diffuse 0.558 0.037 0.793
+shininess 20
+specular 0.37 0.37 0.37
+sphere 9 -61 6 6
+
+diffuse 0.081 0.053 0.148
+shininess 7
+specular 0.41 0.41 0.41
+sphere 13 -43 5 5
+
+diffuse 0.449 0.908 0.132
+shininess 127
+specular 0.68 0.68 0.68
+sphere 19 -25 3 3
+
+diffuse 0.958 0.157 0.306
+shininess 114
+specular 0.19 0.19 0.19
+sphere 10 -2 4 4
+
+diffuse 0.137 0.293 0.941
+shininess 45
+specular 0.23 0.23 0.23
+sphere 16 22 7 7
+
+diffuse 0.347 0.961 0.767
+shininess 73
+specular 0.56 0.56 0.56
+sphere 11 50 7 7
+
+diffuse 0.031 0.855 0.752
+shininess 52
+specular 0.42 0.42 0.42
+sphere 17 70 5 5
+
+diffuse 0.433 0.815 0.674
+shininess 58
+specular 0.07 0.07 0.07
+sphere 14 87 4 4
+
+diffuse 0.093 0.588 0.37
+shininess 130
+specular 0.04 0.04 0.04
+sphere 11 102 5 5
+
+diffuse 0.657 0.965 0.337
+shininess 63
+specular 0.21 0.21 0.21
+sphere 9 130 5 5
+
+diffuse 0.92 0.926 0.526
+shininess 46
+specular 0.01 0.01 0.01
+sphere 33 -154 7 7
+
+diffuse 0.352 0.352 0.97
+shininess 34
+specular 0.29 0.29 0.29
+sphere 30 -128 5 5
+
+diffuse 0.138 0.038 0.619
+shininess 84
+specular 0.24 0.24 0.24
+sphere 33 -126 4 4
+
+diffuse 0.663 0.967 0.018
+shininess 30
+specular 0.18 0.18 0.18
+sphere 36 -103 3 3
+
+diffuse 0.049 0.655 0.83
+shininess 5
+specular 0.61 0.61 0.61
+sphere 32 -81 5 5
+
+diffuse 0.946 0.871 0.271
+shininess 86
+specular 0.29 0.29 0.29
+sphere 35 -58 4 4
+
+diffuse 0.493 0.084 0.139
+shininess 78
+specular 0.19 0.19 0.19
+sphere 32 -46 3 3
+
+diffuse 0.463 0.899 0.514
+shininess 46
+specular 0.65 0.65 0.65
+sphere 38 -29 7 7
+
+diffuse 0.31 0.991 0.146
+shininess 88
+specular 0.39 0.39 0.39
+sphere 28 -20 4 4
+
+diffuse 0.852 0.456 0.699
+shininess 149
+specular 0.68 0.68 0.68
+sphere 35 10 6 6
+
+diffuse 0.383 0.421 0.137
+shininess 135
+specular 0.5 0.5 0.5
+sphere 33 30 4 4
+
+diffuse 0.533 0.443 0.313
+shininess 103
+specular 0.01 0.01 0.01
+sphere 30 33 4 4
+
+diffuse 0.829 0.399 0.663
+shininess 80
+specular 0.27 0.27 0.27
+sphere 30 58 4 4
+
+diffuse 0.018 0.538 0.877
+shininess 26
+specular 0.3 0.3 0.3
+sphere 36 70 5 5
+
+diffuse 0.036 0.381 0.788
+shininess 54
+specular 0.04 0.04 0.04
+sphere 35 98 4 4
+
+diffuse 0.509 0.855 0.164
+shininess 28
+specular 0.27 0.27 0.27
+sphere 31 107 6 6
+
+diffuse 0.335 0.351 0.495
+shininess 34
+specular 0.35 0.35 0.35
+sphere 37 125 7 7
+
+diffuse 0.681 0.031 0.853
+shininess 7
+specular 0.06 0.06 0.06
+sphere 61 -148 3 3
+
+diffuse 0.903 0.545 0.179
+shininess 13
+specular 0.65 0.65 0.65
+sphere 58 -125 3 3
+
+diffuse 0.141 0.416 0.33
+shininess 55
+specular 0.65 0.65 0.65
+sphere 62 -114 7 7
+
+diffuse 0.707 0.586 0.837
+shininess 85
+specular 0.43 0.43 0.43
+sphere 61 -84 7 7
+
+diffuse 0.882 0.223 0.458
+shininess 11
+specular 0.21 0.21 0.21
+sphere 63 -70 7 7
+
+diffuse 0.009 0.332 0.274
+shininess 53
+specular 0.48 0.48 0.48
+sphere 55 -58 7 7
+
+diffuse 0.647 0.546 0.09
+shininess 74
+specular 0.07 0.07 0.07
+sphere 63 -32 5 5
+
+diffuse 0.24 0.456 0.957
+shininess 106
+specular 0.36 0.36 0.36
+sphere 57 -13 6 6
+
+diffuse 0.167 0.438 0.605
+shininess 68
+specular 0.55 0.55 0.55
+sphere 57 0 4 4
+
+diffuse 0.882 0.778 0.024
+shininess 146
+specular 0.18 0.18 0.18
+sphere 58 8 5 5
+
+diffuse 0.407 0.697 0.709
+shininess 56
+specular 0.27 0.27 0.27
+sphere 61 28 4 4
+
+diffuse 0.749 0.703 0.485
+shininess 55
+specular 0.1 0.1 0.1
+sphere 59 45 3 3
+
+diffuse 0.262 0.522 0.552
+shininess 45
+specular 0.35 0.35 0.35
+sphere 62 65 6 6
+
+diffuse 0.427 0.894 0.568
+shininess 23
+specular 0.18 0.18 0.18
+sphere 55 87 7 7
+
+diffuse 0.922 0.187 0.599
+shininess 63
+specular 0.38 0.38 0.38
+sphere 63 109 7 7
+
+diffuse 0.958 0.79 0.833
+shininess 78
+specular 0.05 0.05 0.05
+sphere 56 129 4 4
+
+diffuse 0.363 0.928 0.704
+shininess 140
+specular 0.04 0.04 0.04
+sphere 59 147 7 7
+
+diffuse 0.758 0.52 0.922
+shininess 27
+specular 0.04 0.04 0.04
+sphere 84 -152 4 4
+
+diffuse 0.203 0.983 0.979
+shininess 108
+specular 0.04 0.04 0.04
+sphere 77 -134 3 3
+
+diffuse 0.916 0.735 0.55
+shininess 128
+specular 0.56 0.56 0.56
+sphere 81 -108 7 7
+
+diffuse 0.547 0.104 0.593
+shininess 72
+specular 0.19 0.19 0.19
+sphere 77 -100 3 3
+
+diffuse 0.25 0.103 0.31
+shininess 36
+specular 0.57 0.57 0.57
+sphere 76 -71 4 4
+
+diffuse 0.699 0.836 0.075
+shininess 39
+specular 0.48 0.48 0.48
+sphere 84 -58 4 4
+
+diffuse 0.496 0.646 0.21
+shininess 16
+specular 0.08 0.08 0.08
+sphere 79 -44 3 3
+
+diffuse 0.575 0.835 0.748
+shininess 133
+specular 0.04 0.04 0.04
+sphere 77 -18 6 6
+
+diffuse 0.939 0.115 0.011
+shininess 5
+specular 0.25 0.25 0.25
+sphere 81 2 3 3
+
+diffuse 0.228 0.613 0.635
+shininess 67
+specular 0.49 0.49 0.49
+sphere 76 17 7 7
+
+diffuse 0.09 0.573 0.336
+shininess 127
+specular 0.32 0.32 0.32
+sphere 79 52 5 5
+
+diffuse 0.888 0.936 0.936
+shininess 136
+specular 0.67 0.67 0.67
+sphere 82 74 7 7
+
+diffuse 0.829 0.649 0.324
+shininess 71
+specular 0.06 0.06 0.06
+sphere 84 83 6 6
+
+diffuse 0.507 0.563 0.784
+shininess 127
+specular 0.28 0.28 0.28
+sphere 75 98 4 4
+
+diffuse 0.623 0.843 0.176
+shininess 85
+specular 0.52 0.52 0.52
+sphere 83 114 4 4
+
+diffuse 0.045 0.795 0.927
+shininess 57
+specular 0.18 0.18 0.18
+sphere 78 125 4 4
+
+diffuse 0.682 0.526 0.432
+shininess 71
+specular 0.26 0.26 0.26
+sphere 80 133 7 7
+
+diffuse 0.259 0.504 0.03
+shininess 124
+specular 0.17 0.17 0.17
+sphere 101 -148 7 7
+
+diffuse 0.627 0.92 0.88
+shininess 150
+specular 0.12 0.12 0.12
+sphere 101 -139 7 7
+
+diffuse 0.331 0.439 0.693
+shininess 120
+specular 0.57 0.57 0.57
+sphere 102 -105 4 4
+
+diffuse 0.276 0.422 0.67
+shininess 48
+specular 0.17 0.17 0.17
+sphere 99 -96 3 3
+
+diffuse 0.869 0.124 0.507
+shininess 113
+specular 0.08 0.08 0.08
+sphere 105 -69 5 5
+
+diffuse 0.776 0.666 0.994
+shininess 72
+specular 0.32 0.32 0.32
+sphere 100 -50 5 5
+
+diffuse 0.132 0.5 0.578
+shininess 121
+specular 0.57 0.57 0.57
+sphere 105 -27 3 3
+
+diffuse 0.858 0.602 0.338
+shininess 57
+specular 0.24 0.24 0.24
+sphere 97 7 4 4
+
+diffuse 0.548 0.749 0.05
+shininess 83
+specular 0.15 0.15 0.15
+sphere 105 30 4 4
+
+diffuse 0.367 0.611 0.067
+shininess 142
+specular 0.29 0.29 0.29
+sphere 97 38 5 5
+
+diffuse 0.344 0 0.099
+shininess 104
+specular 0.25 0.25 0.25
+sphere 96 55 5 5
+
+diffuse 0.8 0.99 0.865
+shininess 128
+specular 0.37 0.37 0.37
+sphere 99 79 3 3
+
+diffuse 0.442 0.66 0.452
+shininess 78
+specular 0.43 0.43 0.43
+sphere 104 86 7 7
+
+diffuse 0.867 0.338 0.526
+shininess 145
+specular 0.01 0.01 0.01
+sphere 99 114 5 5
+
+diffuse 0.28 0.106 0.848
+shininess 24
+specular 0.67 0.67 0.67
+sphere 96 128 7 7
+
+diffuse 0.159 0.696 0.179
+shininess 93
+specular 0.14 0.14 0.14
+sphere 98 143 5 5
+
+diffuse 0.021 0.808 0.639
+shininess 149
+specular 0.58 0.58 0.58
+sphere 110 -150 3 3
+
+diffuse 0.274 0.942 0.107
+shininess 64
+specular 0.63 0.63 0.63
+sphere 119 -126 4 4
+
+diffuse 0.376 0.437 0.343
+shininess 149
+specular 0.45 0.45 0.45
+sphere 111 -110 3 3
+
+diffuse 0.345 0.305 0.74
+shininess 148
+specular 0.2 0.2 0.2
+sphere 111 -99 7 7
+
+diffuse 0.956 0.837 0.291
+shininess 12
+specular 0.18 0.18 0.18
+sphere 116 -77 4 4
+
+diffuse 0.065 0.782 0.727
+shininess 63
+specular 0.54 0.54 0.54
+sphere 118 -64 4 4
+
+diffuse 0.164 0.946 0.125
+shininess 136
+specular 0.66 0.66 0.66
+sphere 111 -44 7 7
+
+diffuse 0.794 0.068 0.874
+shininess 15
+specular 0.09 0.09 0.09
+sphere 113 -31 3 3
+
+diffuse 0.972 0.095 0.462
+shininess 106
+specular 0.35 0.35 0.35
+sphere 116 -18 6 6
+
+diffuse 0.861 0.628 0.615
+shininess 148
+specular 0.37 0.37 0.37
+sphere 109 -1 6 6
+
+diffuse 0.04 0.783 0.584
+shininess 138
+specular 0.61 0.61 0.61
+sphere 109 17 5 5
+
+diffuse 0.823 0.367 0.168
+shininess 45
+specular 0.04 0.04 0.04
+sphere 110 31 3 3
+
+diffuse 0.804 0.573 0.609
+shininess 64
+specular 0.39 0.39 0.39
+sphere 110 49 7 7
+
+diffuse 0.478 0.186 0.735
+shininess 12
+specular 0.07 0.07 0.07
+sphere 119 57 7 7
+
+diffuse 0.217 0.566 0.539
+shininess 60
+specular 0.6 0.6 0.6
+sphere 110 90 3 3
+
+diffuse 0.348 0.542 0.344
+shininess 144
+specular 0.68 0.68 0.68
+sphere 113 114 6 6
+
+diffuse 0.877 0.343 0.431
+shininess 93
+specular 0.28 0.28 0.28
+sphere 119 132 4 4
+
+diffuse 0.352 0.893 0.525
+shininess 134
+specular 0.19 0.19 0.19
+sphere 110 144 7 7
+
+diffuse 0.091 0.776 0.451
+shininess 10
+specular 0.52 0.52 0.52
+sphere 131 -153 3 3
+
+diffuse 0.537 0.562 0.823
+shininess 25
+specular 0.68 0.68 0.68
+sphere 130 -138 4 4
+
+diffuse 0.499 0.922 0.846
+shininess 60
+specular 0.14 0.14 0.14
+sphere 124 -128 4 4
+
+diffuse 0.645 0.056 0.897
+shininess 17
+specular 0.07 0.07 0.07
+sphere 128 -105 3 3
+
+diffuse 0.645 0.831 0.232
+shininess 72
+specular 0.69 0.69 0.69
+sphere 125 -87 6 6
+
+diffuse 0.663 0.846 0.773
+shininess 78
+specular 0.16 0.16 0.16
+sphere 126 -73 7 7
+
+diffuse 0.242 0.155 0.751
+shininess 23
+specular 0.17 0.17 0.17
+sphere 124 -43 6 6
+
+diffuse 0.372 0.755 0.896
+shininess 92
+specular 0.15 0.15 0.15
+sphere 130 -21 3 3
+
+diffuse 0.894 0.882 0.996
+shininess 101
+specular 0.27 0.27 0.27
+sphere 123 7 3 3
+
+diffuse 0.814 0.596 0.305
+shininess 86
+specular 0.52 0.52 0.52
+sphere 124 27 3 3
+
+diffuse 0.572 0.631 0.285
+shininess 72
+specular 0.16 0.16 0.16
+sphere 128 47 5 5
+
+diffuse 0.189 0.443 0.444
+shininess 30
+specular 0.07 0.07 0.07
+sphere 123 69 5 5
+
+diffuse 0.898 0.768 0.366
+shininess 32
+specular 0.23 0.23 0.23
+sphere 131 94 6 6
+
+diffuse 0.284 0.181 0.648
+shininess 87
+specular 0.46 0.46 0.46
+sphere 131 103 3 3
+
+diffuse 0.556 0.112 0.069
+shininess 150
+specular 0.21 0.21 0.21
+sphere 133 133 6 6
+
+diffuse 0.484 0.824 0.555
+shininess 128
+specular 0.01 0.01 0.01
+sphere 130 142 6 6

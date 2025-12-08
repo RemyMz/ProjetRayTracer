@@ -1,0 +1,21 @@
+size 640 480
+
+output tp62-5.png
+
+camera -5 0 5 0 0 0 0 1 0 45
+
+directional -1 1 1 1 1 1
+
+specular .5 .5 .5
+shininess 30
+maxdepth 5
+
+
+diffuse .5 .5 0
+sphere 0 0 0 1
+
+diffuse 0 .5 .5
+sphere 2 0 1 1
+
+diffuse .5 .5 .5
+sphere 1 -2 1 1

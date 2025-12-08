@@ -1,0 +1,7 @@
+target/
+*.class
+*.jar
+.vscode/
+.DS_Store
+output/
+*.png

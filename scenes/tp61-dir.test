@@ -1,0 +1,18 @@
+size 640 480
+
+output tp61-dir.png
+
+camera 0 0 6 0 0 0 0 1 0 45
+
+directional 1 1 1 1 1 1
+
+specular .5 .5 .5
+shininess 10
+maxdepth 10
+
+diffuse .2 .2 .2
+plane 0 -1 0 0 1 0
+
+diffuse .5 .5 0
+sphere 0 0 0 1
+
