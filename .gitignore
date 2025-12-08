@@ -3,7 +3,7 @@ target/
 *.jar
 .vscode/
 .DS_Store
-output/
+output/*
 *.png
 
 !output/final.png
