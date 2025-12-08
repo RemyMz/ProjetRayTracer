@@ -13,7 +13,7 @@ Un moteur de **Ray Tracing** complet développé en **Java pur**. Ce dépôt con
 ### Scène Finale "Dragon" (Avec Bonus)
 > Cette scène complexe (+50k triangles) démontre la puissance de l'optimisation **BVH**, la gestion des **ombres portées**, des **matériaux complexes** et de la **réflexion miroir**.
 
-![Rendu Final](output/final_avec_bonus.png)
+![Rendu Final](output/dragon3.png) & (output/final.png)
 *(L'image est générée dans le dossier `output/` après exécution du moteur)*
 
 ---
