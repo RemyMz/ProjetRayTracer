@@ -5,3 +5,6 @@ target/
 .DS_Store
 output/
 *.png
+
+!output/final.png
+!output/final_avec_bonus.png
