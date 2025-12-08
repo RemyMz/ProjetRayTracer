@@ -114,4 +114,21 @@ public class Triangle extends Shape {
     public Vector getNormalAt(Point p) {
         return normal;
     }
+
+    @Override
+    public AABB getBoundingBox() {
+        double minX = Math.min(a.getX(), Math.min(b.getX(), c.getX()));
+        double minY = Math.min(a.getY(), Math.min(b.getY(), c.getY()));
+        double minZ = Math.min(a.getZ(), Math.min(b.getZ(), c.getZ()));
+
+        double maxX = Math.max(a.getX(), Math.max(b.getX(), c.getX()));
+        double maxY = Math.max(a.getY(), Math.max(b.getY(), c.getY()));
+        double maxZ = Math.max(a.getZ(), Math.max(b.getZ(), c.getZ()));
+
+        // On ajoute un petit epsilon pour éviter les boîtes plates
+        return new AABB(
+            new Point(minX - 0.001, minY - 0.001, minZ - 0.001),
+            new Point(maxX + 0.001, maxY + 0.001, maxZ + 0.001)
+        );
+    }
 }

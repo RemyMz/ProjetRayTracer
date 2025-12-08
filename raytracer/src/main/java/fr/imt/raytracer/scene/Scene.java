@@ -1,5 +1,6 @@
 package fr.imt.raytracer.scene;
 
+import fr.imt.raytracer.geometry.BvhNode;
 import fr.imt.raytracer.geometry.Shape;
 import fr.imt.raytracer.imaging.Color;
 import java.util.ArrayList;
@@ -115,4 +116,12 @@ public class Scene {
     public void setCamera(Camera camera) { this.camera = camera; }
     public void setAmbient(Color ambient) { this.ambient = ambient; }
     public void setMaxDepth(int maxDepth) { this.maxDepth = maxDepth; }
+
+    // Transforme la liste plate en arbre optimisé
+    public void buildBVH() {
+        if (this.shapes.isEmpty()) return;
+        BvhNode root = new BvhNode(new ArrayList<>(this.shapes));
+        this.shapes.clear();
+        this.shapes.add(root); // La scène ne contient plus qu'un seul objet : la racine de l'arbre
+    }
 }

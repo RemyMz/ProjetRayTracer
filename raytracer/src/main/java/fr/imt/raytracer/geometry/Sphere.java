@@ -99,4 +99,10 @@ public class Sphere extends Shape {
     public Vector getNormalAt(Point p) {
         return p.sub(center).norm();
     }
+
+    @Override
+    public AABB getBoundingBox() {
+        Vector r = new Vector(radius, radius, radius);
+        return new AABB(center.sub(r), center.add(r));
+    }
 }

@@ -33,9 +33,6 @@ public class Plane extends Shape {
      * Calcule l'intersection entre un rayon et ce plan.
      * <p>
      * Résout l'équation paramétrique $t = \frac{(q - o) \cdot \vec{n}}{\vec{d} \cdot \vec{n}}$.
-     *
-     * @param ray Le rayon lancé (origine $o$, direction $\vec{d}$).
-     * @return Un Optional contenant l'intersection si $t > \epsilon$, vide sinon.
      */
     @Override
     public Optional<Intersection> findIntersection(Ray ray) {
@@ -45,41 +42,55 @@ public class Plane extends Shape {
         double denominator = rayDirection.dot(normal);
 
         // 1. Vérification du parallélisme
-        // Si d . n est proche de 0, le rayon est perpendiculaire à la normale, donc parallèle au plan.
         if (Math.abs(denominator) < AbstractVec3.EPSILON) {
             return Optional.empty();
         }
 
         // Calcul du numérateur : (q - o) . n
-        // Vecteur allant de l'origine du rayon au point du plan
         Vector originToPlane = point.sub(ray.getOrigin());
         double numerator = originToPlane.dot(normal);
 
         // Calcul de la distance t
         double t = numerator / denominator;
 
-        // 2. Vérification de la visibilité
-        // Si t < EPSILON, l'intersection est derrière l'origine du rayon ou trop proche (auto-intersection)
+        // 2. Vérification de la visibilité (devant la caméra)
         if (t < AbstractVec3.EPSILON) {
             return Optional.empty();
         }
 
-        // Calcul du point d'impact exact : p = o + d * t
+        // Calcul du point d'impact exact
         Point intersectionPoint = ray.getPointAt(t);
 
-        return Optional.of(new Intersection(t, intersectionPoint, normal, this));
+        // --- GESTION DOUBLE FACE ---
+        // Si le rayon arrive "de dos" (dénominateur positif), on inverse la normale
+        // pour que la surface soit éclairée correctement des deux côtés.
+        Vector effectiveNormal = denominator < 0 ? normal : normal.mult(-1.0);
+
+        return Optional.of(new Intersection(t, intersectionPoint, effectiveNormal, this));
     }
 
     /**
      * Retourne la normale au plan.
-     * <p>
-     * Pour un plan infini plat, la normale est constante quel que soit le point d'impact.
-     *
-     * @param p Le point d'intersection (inutilisé ici).
-     * @return Le vecteur normal unitaire du plan.
      */
     @Override
     public Vector getNormalAt(Point p) {
         return normal;
+    }
+
+    /**
+     * Retourne la boîte englobante (AABB) du plan.
+     * <p>
+     * Un plan étant infini, sa boîte englobante couvre théoriquement tout l'espace.
+     * On retourne une boîte allant de -Infini à +Infini pour garantir que le plan
+     * est toujours inclus dans les tests d'intersection du BVH.
+     *
+     * @return Une AABB infinie.
+     */
+    @Override
+    public AABB getBoundingBox() {
+        return new AABB(
+            new Point(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY),
+            new Point(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY)
+        );
     }
 }

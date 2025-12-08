@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  * Point d'entrée principal de l'application RayTracer.
  * <p>
  * Ce programme charge une description de scène, initialise le moteur de rendu,
- * exécute le lancer de rayons en parallèle, et sauvegarde le résultat.
+ * active les optimisations (BVH), exécute le lancer de rayons en parallèle, et sauvegarde le résultat.
  */
 public class Main {
 
@@ -37,7 +37,7 @@ public class Main {
         System.out.println(">>> Chargement de la scène : " + sceneFilePath);
 
         try {
-            // 1. Parsing et Configuration
+            // 1. Parsing, Configuration ET Optimisation
             Scene scene = loadAndParseScene(sceneFilePath);
             printSceneSummary(scene);
 
@@ -56,17 +56,23 @@ public class Main {
         } catch (Exception e) {
             System.err.println("\n!!! ECHEC DU RENDU !!!");
             System.err.println("Erreur critique : " + e.getMessage());
-            e.printStackTrace(); // Utile pour le debug, à retirer en prod stricte
+            e.printStackTrace();
         }
     }
 
     /**
-     * Charge et parse le fichier de description de scène.
+     * Charge, parse et optimise le fichier de description de scène.
      */
     private static Scene loadAndParseScene(String filePath) throws IOException {
         Scene scene = new Scene();
         SceneFileParser parser = new SceneFileParser(scene);
         parser.parseFile(filePath);
+        
+        // --- ACTIVATION DE L'OPTIMISATION BVH ---
+        // C'est ici que la magie opère : on organise les triangles dans l'arbre.
+        scene.buildBVH();
+        // ----------------------------------------
+        
         return scene;
     }
 
@@ -131,7 +137,9 @@ public class Main {
         }
         
         System.out.println(" Lumières        : " + scene.getLights().size());
-        System.out.println(" Objets (Formes) : " + scene.getShapes().size());
+        // Note : Après buildBVH(), getShapes() ne retournera que les Plans + 1 BvhNode racine.
+        // Ce n'est pas un bug d'affichage, c'est la preuve que la compression a fonctionné.
+        System.out.println(" Objets Racine   : " + scene.getShapes().size() + " (Optimisé)");
         System.out.println(" Profondeur Max  : " + scene.getMaxDepth() + " rebonds");
         System.out.println("--------------------------------------------------");
     }

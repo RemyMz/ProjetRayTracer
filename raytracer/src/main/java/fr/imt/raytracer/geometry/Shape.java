@@ -84,4 +84,6 @@ public abstract class Shape {
     public void setShininess(double shininess) {
         this.shininess = shininess;
     }
+
+    public abstract AABB getBoundingBox();
 }
