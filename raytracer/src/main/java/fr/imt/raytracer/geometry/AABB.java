@@ -1,7 +1,5 @@
 package fr.imt.raytracer.geometry;
 
-import java.util.Optional;
-
 /**
  * Boîte englobante alignée sur les axes (AABB).
  * Permet d'optimiser les intersections en testant d'abord la boîte avant l'objet.

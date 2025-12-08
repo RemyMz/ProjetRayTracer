@@ -8,3 +8,4 @@ output/*
 
 !output/final.png
 !output/dragon3.png
+!images_test/
