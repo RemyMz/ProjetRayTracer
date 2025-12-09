@@ -15,11 +15,7 @@ Un moteur de **Ray Tracing** complet développé en **Java pur**. Ce dépôt con
 
 ![Rendu Final](output/dragon3.png)
 
-&
-
-![Rendu Final](output/final.png)
-
-*(L'image sont générées dans le dossier `output/` après exécution du moteur)*
+*(L'image est générée dans le dossier `output/` après exécution du moteur)*
 
 ---
 
