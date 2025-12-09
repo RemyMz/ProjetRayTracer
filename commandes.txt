@@ -1,8 +1,0 @@
-1. Compiler le projet :
-   mvn clean package
-
-2. Lancer la scène finale (Dragon) :
-   java -jar raytracer/target/raytracer-1.0-SNAPSHOT.jar scenes/final_avec_bonus.scene
-
-3. Tester le comparateur d'images :
-   java -jar imgcompare/target/imgcompare-1.0-SNAPSHOT.jar images_test/test_compare_image1.png images_test/test_compare_image2.png
