@@ -1,0 +1,6 @@
+fr.imt.raytracer
+fr.imt.raytracer.geometry
+fr.imt.raytracer.imaging
+fr.imt.raytracer.parsing
+fr.imt.raytracer.renderer
+fr.imt.raytracer.scene

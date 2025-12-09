@@ -56,7 +56,7 @@ public class Vector extends AbstractVec3 {
      * Multiplie ce vecteur par un scalaire.
      * <p>
      * Mathématiquement : $\vec{w} = k \cdot \vec{u}$.
-     * Permet d'étirer (k > 1), rétrécir (0 < k < 1) ou inverser (k < 0) le vecteur.
+     * Permet d'étirer (k &gt; 1), rétrécir (0 &lt; k &lt; 1) ou inverser (k &lt; 0) le vecteur.
      *
      * @param scalar Le facteur multiplicatif.
      * @return Le vecteur mis à l'échelle.
