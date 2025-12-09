@@ -69,6 +69,8 @@ public class BvhNode extends Shape {
      * <p>
      * Optimisation majeure : si le rayon ne touche pas la boîte englobante (AABB) de ce nœud,
      * on ignore immédiatement tout son contenu (enfants inclus).
+     * * @param ray Le rayon à tester.
+     * @return L'intersection la plus proche trouvée dans ce sous-arbre, ou vide.
      */
     @Override
     public Optional<Intersection> findIntersection(Ray ray) {
@@ -91,6 +93,10 @@ public class BvhNode extends Shape {
         }
     }
 
+    /**
+     * Retourne la boîte englobante de ce nœud.
+     * @return L'objet AABB qui contient tous les enfants de ce nœud.
+     */
     @Override
     public AABB getBoundingBox() {
         return box;
@@ -102,13 +108,17 @@ public class BvhNode extends Shape {
      * Un nœud BVH est un conteneur abstrait, il n'a pas de surface physique.
      * L'intersection finale renverra toujours la forme géométrique réelle (feuille de l'arbre),
      * jamais le nœud BVH lui-même.
+     *
+     * @param p Le point sur la surface.
+     * @return Jamais.
+     * @throws UnsupportedOperationException Toujours.
      */
     @Override
     public Vector getNormalAt(Point p) {
         throw new UnsupportedOperationException("Impossible de calculer la normale sur un nœud BVH abstrait.");
     }
 
-    // --- Utilitaire interne ---
+    // --- Utilitaire interne pour récupérer la coordonnée selon l'axe choisi ---
 
     private double getAxisValue(Shape s, int axis) {
         Point min = s.getBoundingBox().min;
